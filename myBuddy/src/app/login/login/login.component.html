@@ -1,0 +1,26 @@
+<div style="text-align:center">
+  <form name="login" #loginForm="ngForm" (ngSubmit)="login()">
+    <div class="row" style="text-align: center">
+      <label>User Name:</label>
+      <input type="text" name="username" [(ngModel)]="userName" #name="ngModel" required>
+      <div *ngIf="name.invalid && (name.touched || name.dirty)" class="alert alert-danger">
+        <div *ngIf="name.errors.required">
+          User Name is required
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align: center">
+      <label>Password:</label>
+      <input type="password" name="password" [(ngModel)]="password" #pass="ngModel" required>
+      <div *ngIf="pass.invalid && (pass.touched || pass.dirty)" class="alert alert-danger">
+        <div *ngIf="pass.errors.required">
+          Password is required
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align: center">
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button class="btn btn-info" (click)="register()">Register</button>
+    </div>
+  </form>
+</div>
