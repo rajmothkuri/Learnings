@@ -1,0 +1,3 @@
+com/boa/paydit/controller/AuthControllerTest.class
+com/boa/paydit/service/AuthServiceImplTest.class
+com/boa/paydit/security/JwtTokenProviderTest.class

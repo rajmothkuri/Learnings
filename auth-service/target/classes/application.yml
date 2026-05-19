@@ -1,0 +1,43 @@
+server:
+  port: 8081
+
+spring:
+
+  application:
+    name: PAYDIT-AUTH-SERVICE
+
+  profiles:
+    active: dev
+
+  data:
+    mongodb:
+      uri: mongodb+srv://raj_db_user:<6Ioejtp349MCL4Ze>@rajlearnings.kxnwqvl.mongodb.net/?appName=RajLearnings
+      database: BOA_Paydit_Auth_DB
+
+logging:
+
+  level:
+
+    root: INFO
+
+    com.boa.paydit: DEBUG
+
+jwt:
+  secret: ChangeThisSecretForDevChangeThisToSecureValueChangeThis
+  expiration-ms: 3600000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+management:
+
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      show-details: always
