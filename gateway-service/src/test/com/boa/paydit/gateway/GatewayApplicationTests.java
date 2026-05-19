@@ -1,10 +1,10 @@
-package com.boa.paydit.discovery_service;
+package com.boa.paydit.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiscoveryServiceApplicationTests {
+class GatewayApplicationTests {
 
 	@Test
 	void contextLoads() {

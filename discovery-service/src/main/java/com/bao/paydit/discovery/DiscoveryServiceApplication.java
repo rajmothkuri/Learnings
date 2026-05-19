@@ -1,4 +1,4 @@
-package com.boa.paydit.discovery_service;
+package com.boa.paydit.discovery;
 
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.boot.SpringApplication;
